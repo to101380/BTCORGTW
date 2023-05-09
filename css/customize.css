@@ -164,10 +164,10 @@ button:focus {
     margin-bottom: 60px;
 }
 #artDetail .post-title{
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 40px;
+    font-size: 30px;
+    font-weight: 500;  
 }
+
 #artDetail .post-img{
     position: relative;
 }
