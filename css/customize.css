@@ -971,7 +971,7 @@ nav a.sidenav-trigger i {
 }
 
 @media (max-width: 420px) {
-  .test {
+  .tagCtrl {
     display: none;
   }
 }
