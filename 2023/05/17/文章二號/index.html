@@ -97,526 +97,527 @@
 
 <body>
     <!-- <header class="navbar-fixed"> -->
-<header class="navbar">
-  <div id="header-ad" class="ad-block" style="display: none">
-    <span class="ad-text">廣告廣告廣告廣告廣告廣告廣告廣告</span>
-    <button id="header-closeBtn" class="ad-close">
-      <img src="/medias/ad-close.svg" />
-    </button>
-  </div>
-  <nav id="headNav" class="bg-color white nav-transparent" style="height: auto">
-    <div class="bitcoin-price grey lighten-4">
-      <div class="btc-price">
-        <div class="swiper-container" style="height: 55px">
-          <div class="container">
-            <div class="swiper myBtcSwiper">
-              <div class="swiper-wrapper">
-                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-                <!-- 日期 -->
-                <div
-                  class="swiper-slide swiper-btc-block-date"
-                  style="height: 60px"
-                >
-                  <a href="">
-                    <span style="color: black">
-                      <img
-                        src="/medias/icon-calender-black.png"
-                        class="responsive-img"
-                        alt="iconCal"
-                        style="
-                          margin-top: 20px;
-                          height: 16px;
-                          width: 16px;
-                          display: inline-block;
-                        "
-                      />
-                      <span id="btc-block-date" style="display: inline-block">
-                        <script>
-                          var today = new Date();
-                          var dd = String(today.getDate()).padStart(2, "0");
-                          var mm = String(today.getMonth() + 1).padStart(
-                            2,
-                            "0"
-                          ); //January is 0
-                          var yyyy = today.getFullYear();
-                          today = yyyy + "/" + mm + "/" + dd;
-                          document.getElementById("btc-block-date").innerHTML =
-                            today;
-                        </script>
+  <header class="navbar">
+    <div id="header-ad" class="ad-block" style="display: none">
+      <span class="ad-text">廣告廣告廣告廣告廣告廣告廣告廣告</span>
+      <button id="header-closeBtn" class="ad-close">
+        <img src="/medias/ad-close.svg" />
+      </button>
+    </div>
+    <nav id="headNav" class="bg-color white nav-transparent" style="height: auto">
+      <div class="bitcoin-price grey lighten-4">
+        <div class="btc-price">
+          <div class="swiper-container" style="height: 45px">
+            <div class="container">
+              <div class="swiper myBtcSwiper">
+                <div class="swiper-wrapper">
+                  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+                  <!-- 日期 -->
+                  <div
+                    class="swiper-slide swiper-btc-block-date"
+                    style="height: 60px;font-size: 80%;"
+                  >
+                    <a href="">
+                      <span style="color: black">
+                        <img
+                          src="/medias/icon-calender-black.png"
+                          class="responsive-img"
+                          alt="iconCal"
+                          style="
+                            margin-top: 20px;
+                            height: 14px;
+                            width: 14px;
+                            display: inline-block;
+                          "
+                        />
+                        <span id="btc-block-date" style="display: inline-block">
+                          <script>
+                            var today = new Date();
+                            var dd = String(today.getDate()).padStart(2, "0");
+                            var mm = String(today.getMonth() + 1).padStart(
+                              2,
+                              "0"
+                            ); //January is 0
+                            var yyyy = today.getFullYear();
+                            today = yyyy + "/" + mm + "/" + dd;
+                            document.getElementById("btc-block-date").innerHTML =
+                              today;
+                          </script>
+                        </span>
                       </span>
-                    </span>
-                  </a>
-                </div>
-                <!-- BTC價格 -->
-                <div
-                  class="swiper-slide swiper-btc-block-value"
-                  style="height: 60px; max-width: 169px"
-                >
-                  <a href="">
-                    <span
-                      id="header_cropto_name"
-                      style="color: black; margin-right: 0px"
-                    >
-                      ₿
-                    </span>
-
-                    <span style="color: black">
-                      =
+                    </a>
+                  </div>
+                  <!-- BTC價格 -->
+                  <div
+                    class="swiper-slide swiper-btc-block-value"
+                    style="height: 60px; max-width: 169px;font-size: 80%;"
+                  >
+                    <a href="">
                       <span
-                        id="header_crypto_price"
-                        style="display: inline-block; margin: 0px"
+                        id="header_cropto_name"
+                        style="color: black; margin-right: 0px"
                       >
+                        ₿
                       </span>
-                      USD
-                    </span>
-                  </a>
-                </div>
-                <!-- 區塊高度 -->
-                <div
-                  class="swiper-slide swiper-btc-block-high"
-                  style="height: 60px; left: -30px"
-                >
-                  <a href="">
-                    <span style="width: 360px">
-                      <!-- <span style="font-size: 24px; font-weight: 50; top: -3px; position: relative;color: black;">|</span>  -->
-                      <img
-                        src="/medias/icon-block.png"
-                        class="responsive-img"
-                        alt="iconCal"
-                        style="
-                          margin-top: 20px;
-                          height: 16px;
-                          width: 16px;
-                          display: inline-block;
-                        "
-                      />
-
-                      <span
-                        id="header_crypto_blockhigh"
-                        style="
-                          color: black;
-                          display: inline-block;
-                          width: 60px;
-                          margin: 0px;
-                        "
-                      >
+  
+                      <span style="color: black">
+                        =
+                        <span
+                          id="header_crypto_price"
+                          style="display: inline-block; margin: 0px;font-size: 80%;"
+                        >
+                        </span>
+                        USD
                       </span>
-                    </span>
-                  </a>
+                    </a>
+                  </div>
+                  <!-- 區塊高度 -->
+                  <div
+                    class="swiper-slide swiper-btc-block-high"
+                    style="height: 60px; left: -30px"
+                  >
+                    <a href="">
+                      <span style="width: 360px">
+                        <!-- <span style="font-size: 24px; font-weight: 50; top: -3px; position: relative;color: black;">|</span>  -->
+                        <img
+                          src="/medias/icon-block.png"
+                          class="responsive-img"
+                          alt="iconCal"
+                          style="
+                            margin-top: 20px;
+                            height: 14px;
+                            width: 14px;
+                            display: inline-block;
+                          "
+                        />
+  
+                        <span
+                          id="header_crypto_blockhigh"
+                          style="
+                            color: black;
+                            display: inline-block;
+                            width: 60px;
+                            margin: 0px;
+                            font-size: 80%;
+                          "
+                        >
+                        </span>
+                      </span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="stock-price">
-          <div class="swiper-container" style="height: 60px">
-            <div class="swiper mySwiper2" style="height: 60px">
-              <div class="swiper-wrapper" style="line-height: 60px">
-                <!-- get data from api by ejs axio -->
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-1"></span>
-                  <span id="price-1"></span>
-                  <i
-                    id="price-1_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-1_gain_text" class="text-darken-3">
-                    <span id="price-1_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-2"></span>
-                  <span id="price-2"></span>
-                  <i
-                    id="price-2_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-2_gain_text" class="text-darken-3">
-                    <span id="price-2_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-3"></span>
-                  <span id="price-3"></span>
-                  <i
-                    id="price-3_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-3_gain_text" class="text-darken-3">
-                    <span id="price-3_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-4"></span>
-                  <span id="price-4"></span>
-                  <i
-                    id="price-4_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-4_gain_text" class="text-darken-3">
-                    <span id="price-4_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-5"></span>
-                  <span id="price-5"></span>
-                  <i
-                    id="price-5_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-5_gain_text" class="text-darken-3">
-                    <span id="price-5_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-6"></span>
-                  <span id="price-6"></span>
-                  <i
-                    id="price-6_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-6_gain_text" class="text-darken-3">
-                    <span id="price-6_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-7"></span>
-                  <span id="price-7"></span>
-                  <i
-                    id="price-7_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-7_gain_text" class="text-darken-3">
-                    <span id="price-7_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-8"></span>
-                  <span id="price-8"></span>
-                  <i
-                    id="price-8_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-8_gain_text" class="text-darken-3">
-                    <span id="price-8_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-9"></span>
-                  <span id="price-9"></span>
-                  <i
-                    id="price-9_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-9_gain_text" class="text-darken-3">
-                    <span id="price-9_gain"></span>
-                  </span>
-                </div>
-                
-                <div class="swiper-slide" style="width: auto; padding: 0 15px">
-                  <span id="name-10"></span>
-                  <span id="price-10"></span>
-                  <i
-                    id="price-10_gain_img"
-                    class="fa-solid text-darken-3"
-                  ></i>
-                  <span id="price-10_gain_text" class="text-darken-3">
-                    <span id="price-10_gain"></span>
-                  </span>
-                </div>
-                
-
-                <!-- 
-                                    <div class="swiper-slide">
-                                        <span id="name-empty" ></span>
-                                        <span id="price-empty"></span>                                    
-                                    </div>                                                     
-                                
-                                    <div class="swiper-slide">
-                                        <span id="name-empty" ></span>
-                                        <span id="price-empty"></span>                                    
-                                    </div>                                                     
-                                
-                                    <div class="swiper-slide">
-                                        <span id="name-empty" ></span>
-                                        <span id="price-empty"></span>                                    
-                                    </div>                                                     
-                                                                 -->
-
-                <!-- 從 api.fishdogeweb.store 取得資料，即 api.py -->
-                <script type="module">
-                  import { getStock } from "/js/crypto.js";
-                  import { setPriceGain } from "/js/crypto.js";
-                  let getDataurl = "https://api2.fishdogeweb.store/getData?";
-                  let getStockurl = "https://api2.fishdogeweb.store/getStock?";
-                  const link = [
-                    {
-                      name: "bitcoin",
-                      coin: "BTC",
-                    },
-                    {
-                      name: "ethereum",
-                      coin: "ETH",
-                    },
-                    {
-                      name: "ripple",
-                      coin: "XRP",
-                    },
-                    {
-                      name: "binance-peg-polkadot",
-                      coin: "DOT",
-                    },
-                    {
-                      name: "bitcoin-cash",
-                      coin: "BCH",
-                    },
-                    {
-                      name: "litecoin",
-                      coin: "LTC",
-                    },
-                    {
-                      name: "cardano",
-                      coin: "ADA",
-                    },
-                    {
-                      name: "solana",
-                      coin: "SOL",
-                    },
-                    {
-                      name: "aptos",
-                      coin: "APT",
-                    },
-                    {
-                      name: "mask-network",
-                      coin: "MASK",
-                    },
-                  ];
-
-                  // 自動生成漲跌幅
-                  // for(let i = 0; i < 10; i++){
-                  //     axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=${link[i].name}&vs_currencies=usd&include_24hr_change=true`)
-                  //     .then((gain_res) => {
-                  //             let data = JSON.parse(JSON.stringify(gain_res.data));
-
-                  //     })
-                  //     .catch((error) => {
-                  //         console.log(error);
-                  //     });
-                  // }
-                  // get BTC block height
-                  function getBlockHeight() {
-                    // https://chain.api.btc.com/v3/block/latest
-                    axios
-                      .get("https://chain.api.btc.com/v3/block/latest")
-                      .then((response) => {
-                        let data = JSON.parse(JSON.stringify(response.data));
-                        document.cookie = `height=${data["data"]["height"]}`;
-                        document.getElementById(
-                          "header_crypto_blockhigh"
-                        ).innerHTML = data["data"]["height"];
-                      })
-                      .catch((error) => {
-                        console.log(error);
-                        getCookie();
-                      });
-                  }
-
-                  // 自動生成交易對
-                  function autoSpawnCryto() {
-                    let count = 0;
-                    getBlockHeight();
-                    for (let i = 0; i < 10; i++) {
+        <div class="container">
+          <div class="stock-price">
+            <div class="swiper-container" style="height: 55px; font-size: 80%;">
+              <div class="swiper mySwiper2" style="height: 60px">
+                <div class="swiper-wrapper" style="line-height: 60px">
+                  <!-- get data from api by ejs axio -->
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-1"></span>
+                    <span id="price-1"></span>
+                    <i
+                      id="price-1_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-1_gain_text" class="text-darken-3">
+                      <span id="price-1_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-2"></span>
+                    <span id="price-2"></span>
+                    <i
+                      id="price-2_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-2_gain_text" class="text-darken-3">
+                      <span id="price-2_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-3"></span>
+                    <span id="price-3"></span>
+                    <i
+                      id="price-3_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-3_gain_text" class="text-darken-3">
+                      <span id="price-3_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-4"></span>
+                    <span id="price-4"></span>
+                    <i
+                      id="price-4_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-4_gain_text" class="text-darken-3">
+                      <span id="price-4_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-5"></span>
+                    <span id="price-5"></span>
+                    <i
+                      id="price-5_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-5_gain_text" class="text-darken-3">
+                      <span id="price-5_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-6"></span>
+                    <span id="price-6"></span>
+                    <i
+                      id="price-6_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-6_gain_text" class="text-darken-3">
+                      <span id="price-6_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-7"></span>
+                    <span id="price-7"></span>
+                    <i
+                      id="price-7_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-7_gain_text" class="text-darken-3">
+                      <span id="price-7_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-8"></span>
+                    <span id="price-8"></span>
+                    <i
+                      id="price-8_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-8_gain_text" class="text-darken-3">
+                      <span id="price-8_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-9"></span>
+                    <span id="price-9"></span>
+                    <i
+                      id="price-9_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-9_gain_text" class="text-darken-3">
+                      <span id="price-9_gain"></span>
+                    </span>
+                  </div>
+                  
+                  <div class="swiper-slide" style="width: auto; padding: 0 15px">
+                    <span id="name-10"></span>
+                    <span id="price-10"></span>
+                    <i
+                      id="price-10_gain_img"
+                      class="fa-solid text-darken-3"
+                    ></i>
+                    <span id="price-10_gain_text" class="text-darken-3">
+                      <span id="price-10_gain"></span>
+                    </span>
+                  </div>
+                  
+  
+                  <!-- 
+                                      <div class="swiper-slide">
+                                          <span id="name-empty" ></span>
+                                          <span id="price-empty"></span>                                    
+                                      </div>                                                     
+                                  
+                                      <div class="swiper-slide">
+                                          <span id="name-empty" ></span>
+                                          <span id="price-empty"></span>                                    
+                                      </div>                                                     
+                                  
+                                      <div class="swiper-slide">
+                                          <span id="name-empty" ></span>
+                                          <span id="price-empty"></span>                                    
+                                      </div>                                                     
+                                                                   -->
+  
+                  <!-- 從 api.fishdogeweb.store 取得資料，即 api.py -->
+                  <script type="module">
+                    import { getStock } from "/js/crypto.js";
+                    import { setPriceGain } from "/js/crypto.js";
+                    let getDataurl = "https://api2.fishdogeweb.store/getData?";
+                    let getStockurl = "https://api2.fishdogeweb.store/getStock?";
+                    const link = [
+                      {
+                        name: "bitcoin",
+                        coin: "BTC",
+                      },
+                      {
+                        name: "ethereum",
+                        coin: "ETH",
+                      },
+                      {
+                        name: "ripple",
+                        coin: "XRP",
+                      },
+                      {
+                        name: "binance-peg-polkadot",
+                        coin: "DOT",
+                      },
+                      {
+                        name: "bitcoin-cash",
+                        coin: "BCH",
+                      },
+                      {
+                        name: "litecoin",
+                        coin: "LTC",
+                      },
+                      {
+                        name: "cardano",
+                        coin: "ADA",
+                      },
+                      {
+                        name: "solana",
+                        coin: "SOL",
+                      },
+                      {
+                        name: "aptos",
+                        coin: "APT",
+                      },
+                      {
+                        name: "mask-network",
+                        coin: "MASK",
+                      },
+                    ];
+  
+                    // 自動生成漲跌幅
+                    // for(let i = 0; i < 10; i++){
+                    //     axios.get(`https://api.coingecko.com/api/v3/simple/price?ids=${link[i].name}&vs_currencies=usd&include_24hr_change=true`)
+                    //     .then((gain_res) => {
+                    //             let data = JSON.parse(JSON.stringify(gain_res.data));
+  
+                    //     })
+                    //     .catch((error) => {
+                    //         console.log(error);
+                    //     });
+                    // }
+                    // get BTC block height
+                    function getBlockHeight() {
+                      // https://chain.api.btc.com/v3/block/latest
                       axios
-                        .get(
-                          `https://api.coingecko.com/api/v3/simple/price?ids=${link[i].name}&vs_currencies=usd&include_24hr_change=true`
-                        )
+                        .get("https://chain.api.btc.com/v3/block/latest")
                         .then((response) => {
                           let data = JSON.parse(JSON.stringify(response.data));
-                          document.cookie = `gian${i}=${
-                            Math.round(
-                              (data[link[i].name].usd_24h_change +
-                                Number.EPSILON) *
-                                100
-                            ) / 100
-                          };`;
-                          document.cookie = `value${i}=${
-                            data[link[i].name].usd
-                          };`;
-                          count++;
-                          if (count == 9) {
-                            getCookie();
-                          }
+                          document.cookie = `height=${data["data"]["height"]}`;
+                          document.getElementById(
+                            "header_crypto_blockhigh"
+                          ).innerHTML = data["data"]["height"];
                         })
                         .catch((error) => {
-                          let data;
-                          let url = getDataurl + `coin=${link[i].coin}/USDT`;
-                          // url need to be changed
-                          axios
-                            .get(url)
-                            .then((response) => {
-                              data = JSON.parse(JSON.stringify(response.data));
-                              document.getElementById(
-                                `name-${i + 1}`
-                              ).innerHTML = `${link[i].coin}/USDT`;
-                              document.getElementById(
-                                `price-${i + 1}`
-                              ).innerHTML = data.result.price;
-                              return data;
-                            })
-                            .catch((error) => {
-                              data = error;
-                              console.log(error);
-                              getCookie();
-                            });
-                          data = error;
                           console.log(error);
                           getCookie();
-                          return data;
                         });
-                      document.getElementById(
-                        `name-${i + 1}`
-                      ).innerHTML = `${link[i].coin}/USDT`;
                     }
-                  }
-
-                  function getCookie() {
-                    var Data = document.cookie.split("; ");
-                    Data.forEach((element) => {
-                      if (element.substring(0, 4) == "gian") {
-                        let gain = parseFloat(element.split("=")[1]);
-                        if (gain > 0) {
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_img`
-                            )
-                            .classList.add("fa-caret-up");
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_img`
-                            )
-                            .classList.add("green-text");
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_text`
-                            )
-                            .classList.add("green-text");
-                        } else if (gain == 0) {
-                        } else {
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_img`
-                            )
-                            .classList.add("fa-caret-down");
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_img`
-                            )
-                            .classList.add("red-text");
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_text`
-                            )
-                            .classList.add("red-text");
-                          gain *= -1;
-                        }
+  
+                    // 自動生成交易對
+                    function autoSpawnCryto() {
+                      let count = 0;
+                      getBlockHeight();
+                      for (let i = 0; i < 10; i++) {
+                        axios
+                          .get(
+                            `https://api.coingecko.com/api/v3/simple/price?ids=${link[i].name}&vs_currencies=usd&include_24hr_change=true`
+                          )
+                          .then((response) => {
+                            let data = JSON.parse(JSON.stringify(response.data));
+                            document.cookie = `gian${i}=${
+                              Math.round(
+                                (data[link[i].name].usd_24h_change +
+                                  Number.EPSILON) *
+                                  100
+                              ) / 100
+                            };`;
+                            document.cookie = `value${i}=${
+                              data[link[i].name].usd
+                            };`;
+                            count++;
+                            if (count == 9) {
+                              getCookie();
+                            }
+                          })
+                          .catch((error) => {
+                            let data;
+                            let url = getDataurl + `coin=${link[i].coin}/USDT`;
+                            // url need to be changed
+                            axios
+                              .get(url)
+                              .then((response) => {
+                                data = JSON.parse(JSON.stringify(response.data));
+                                document.getElementById(
+                                  `name-${i + 1}`
+                                ).innerHTML = `${link[i].coin}/USDT`;
+                                document.getElementById(
+                                  `price-${i + 1}`
+                                ).innerHTML = data.result.price;
+                                return data;
+                              })
+                              .catch((error) => {
+                                data = error;
+                                console.log(error);
+                                getCookie();
+                              });
+                            data = error;
+                            console.log(error);
+                            getCookie();
+                            return data;
+                          });
                         document.getElementById(
-                          `price-${parseInt(element[4]) + 1}_gain`
-                        ).innerHTML = gain + "%";
-                      } else if (element.substring(0, 5) == "value") {
-                        document.getElementById(
-                          `price-${parseInt(element[5]) + 1}`
-                        ).innerHTML = element.split("=")[1];
-                        if (element[5] == "0") {
+                          `name-${i + 1}`
+                        ).innerHTML = `${link[i].coin}/USDT`;
+                      }
+                    }
+  
+                    function getCookie() {
+                      var Data = document.cookie.split("; ");
+                      Data.forEach((element) => {
+                        if (element.substring(0, 4) == "gian") {
+                          let gain = parseFloat(element.split("=")[1]);
+                          if (gain > 0) {
+                            document
+                              .getElementById(
+                                `price-${parseInt(element[4]) + 1}_gain_img`
+                              )
+                              .classList.add("fa-caret-up");
+                            document
+                              .getElementById(
+                                `price-${parseInt(element[4]) + 1}_gain_img`
+                              )
+                              .classList.add("green-text");
+                            document
+                              .getElementById(
+                                `price-${parseInt(element[4]) + 1}_gain_text`
+                              )
+                              .classList.add("green-text");
+                          } else if (gain == 0) {
+                          } else {
+                            document
+                              .getElementById(
+                                `price-${parseInt(element[4]) + 1}_gain_img`
+                              )
+                              .classList.add("fa-caret-down");
+                            document
+                              .getElementById(
+                                `price-${parseInt(element[4]) + 1}_gain_img`
+                              )
+                              .classList.add("red-text");
+                            document
+                              .getElementById(
+                                `price-${parseInt(element[4]) + 1}_gain_text`
+                              )
+                              .classList.add("red-text");
+                            gain *= -1;
+                          }
                           document.getElementById(
-                            "header_crypto_price"
+                            `price-${parseInt(element[4]) + 1}_gain`
+                          ).innerHTML = gain + "%";
+                        } else if (element.substring(0, 5) == "value") {
+                          document.getElementById(
+                            `price-${parseInt(element[5]) + 1}`
+                          ).innerHTML = element.split("=")[1];
+                          if (element[5] == "0") {
+                            document.getElementById(
+                              "header_crypto_price"
+                            ).innerHTML = element.split("=")[1];
+                          }
+                        } else if (element.substring(0, 6) == "height") {
+                          document.getElementById(
+                            "header_crypto_blockhigh"
                           ).innerHTML = element.split("=")[1];
                         }
-                      } else if (element.substring(0, 6) == "height") {
-                        document.getElementById(
-                          "header_crypto_blockhigh"
-                        ).innerHTML = element.split("=")[1];
-                      }
-                    });
-                  }
-
-                  //init
-                  autoSpawnCryto();
-                  getCookie();
-                  setTimeout(function () {
+                      });
+                    }
+  
+                    //init
                     autoSpawnCryto();
-                  }, 30000);
-                </script>
-              </div>
-              <div class="swiper-button-next">
-                <i
-                  class="fa-solid fa-chevron-right swiper-button-right top10swiper"
-                  style="color: black"
-                  id="next"
-                ></i>
-              </div>
-              <span class="fa-solid"></span>
-              <div class="swiper-button-prev" style="z-index: 999">
-                <i
-                  class="fa-solid fa-chevron-left swiper-button-left top10swiper"
-                  style="color: black"
-                  id="prev"
-                ></i>
-              </div>
-
-              <style>
-                .swiper-button-right {
-                  color: whites;
-                  position: relative;
-                  width: 100%;
-                  top: 3px;
-                  right: -19px;
-                  text-align: center;
-                  background-color: rgb(247, 247, 247);
-                }
-                .swiper-button-left {
-                  color: black;
-                  position: relative;
-                  width: 100%;
-                  top: 3px;
-                  left: -14px;
-                  text-align: center;
-                  background-color: rgb(247, 247, 247);
-                }
-                @media screen and (max-width: 610px) {
+                    getCookie();
+                    setTimeout(function () {
+                      autoSpawnCryto();
+                    }, 30000);
+                  </script>
+                </div>
+                <div class="swiper-button-next">
+                  <i
+                    class="fa-solid fa-chevron-right swiper-button-right top10swiper"
+                    style="color: black"
+                    id="next"
+                  ></i>
+                </div>
+                <span class="fa-solid"></span>
+                <div class="swiper-button-prev" style="z-index: 999">
+                  <i
+                    class="fa-solid fa-chevron-left swiper-button-left top10swiper"
+                    style="color: black"
+                    id="prev"
+                  ></i>
+                </div>
+  
+                <style>
                   .swiper-button-right {
-                    top: 4px;
+                    color: white;
+                    position: relative;
+                    width: 100%;
+                    top: 3px;
+                    right: -19px;
+                    text-align: center;
+                    background-color: rgb(247, 247, 247);
                   }
                   .swiper-button-left {
-                    top: 4px;
+                    color: black;
+                    position: relative;
+                    width: 100%;
+                    top: 3px;
+                    left: -14px;
+                    text-align: center;
+                    background-color: rgb(247, 247, 247);
                   }
-                }
-              </style>
+                  @media screen and (max-width: 610px) {
+                    .swiper-button-right {
+                      top: 4px;
+                    }
+                    .swiper-button-left {
+                      top: 4px;
+                    }
+                  }
+                </style>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <!--移除頂部廣告-->
-    <script>
-      const headerCloseBtn = document.getElementById("header-closeBtn");
-      const headerAD = document.getElementById("header-ad");
-
-      headerCloseBtn.addEventListener("click", () => {
-        headerAD.remove();
-      });
-    </script>
-    
+      <!--移除頂部廣告-->
+      <script>
+        const headerCloseBtn = document.getElementById("header-closeBtn");
+        const headerAD = document.getElementById("header-ad");
+  
+        headerCloseBtn.addEventListener("click", () => {
+          headerAD.remove();
+        });
+      </script>
+      
 
 <!-- <a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a> -->
 <div class="container nav" style="background-color: white;">  
@@ -837,7 +838,7 @@
 </div>
  <div class="slide-container">  
   <div class="container" style="background-color: white;">
-    <div class="swiper mySwiper" style="background-color: white;">
+    <div class="swiper mySwiper" style="background-color: white; font-size: 80%;">
       <div class="swiper-wrapper">
         <div class="swiper-slide"><a href="/tags/比特">比特</a></div>
         <div class="swiper-slide"><a href="/tags/乙太">乙太</a></div>
@@ -850,10 +851,18 @@
         <div class="swiper-slide"><a href="/tags/NFT">NFT</a></div> 
       </div>
       <div class="swiper-button-next" style="right: 14px;">       
-        <img class="tagRight" src="/medias/right.png">
+        <i
+          class="fa-solid fa-chevron-right"
+          style="color: black;position: relative;width: 100%;top: 3px;right: -19px;background-color: white; display:flex; align-items: center;"
+          id="prev"
+        ></i>
       </div>
       <div class="swiper-button-prev" style="left: 14px;">
-        <img class="tagLeft" src="/medias/left.png">
+        <i
+          class="fa-solid fa-chevron-left"
+          style="color: black;position: relative;width: 100%;top: 3px;left: -14px;background-color: white; display:flex; align-items: center;"
+          id="prev"
+        ></i>
       </div>
       <div class="swiper-pagination"></div>
     </div>
@@ -1009,9 +1018,9 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a> 
-  </nav>
-</header>
-
+    </nav>
+  </header>
+  
     
 
 
@@ -1211,8 +1220,63 @@
     <div class="row article-row">
       
       <div class="article col s12 m6 l6">
-        <a href="/2023/05/17/%E6%96%87%E7%AB%A0%E5%85%AB%E8%99%9F/">
+        <a href="/2023/05/21/%E6%96%87%E7%AB%A0%E4%B8%80%E8%99%9F/">
           <!-- 圖片 -->
+          <div class="card-image col s12 m5">
+            
+            <img
+              src="https://image.blocktempo.com/2023/05/xx1.jpg"
+              class="responsive-img"
+              alt="新加密天堂》印尼省長：國家正設立「比特幣交易所」、買BTC作儲備"
+            />
+            
+          </div>
+          <!-- 資料 -->
+          <div class="card-content article-content col s12 m7">
+            <div class="publish-info">
+              <!-- 標題 -->
+              <span class="card-title">新加密天堂》印尼省長：國家正設立「比特幣交易所」、買BTC作儲備</span>
+              <br />
+              <!-- 作者 -->
+              <span class="publish-author">
+                 James 
+              </span>
+              <br />
+              <!-- 日期 -->
+              <span class="publish-date">
+                2023/05/21
+              </span>
+              <!-- 摘要 -->
+              <div class="summary block-with-text">
+                
+                擁有超過 2.7 億人口的印尼，看上加密貨幣產業的潛力，印尼西爪哇（West Java）省長  Ridwan Kamil 在 19 日透露，印尼正準備設立一個比特幣交易所，他還指出，印尼已在採用加密貨幣方面取得重大進展，擁有超過 1200 萬名加密貨幣投資者。 
+              </div>
+              <!-- 標籤 -->
+              
+              <div class="card-action article-tags">
+                
+                <a href="/tags/%E4%BB%BB%E5%A4%A9%E5%A0%82/">
+                  <span class="">#任天堂</span>
+                </a>
+                
+                <a href="/tags/BTC/">
+                  <span class="">#BTC</span>
+                </a>
+                
+                <a href="/tags/%E4%BA%A4%E6%98%93%E6%89%80/">
+                  <span class="">#交易所</span>
+                </a>
+                
+              </div>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+       
+      <div class="article col s12 m6 l6">
+        <!-- 圖片 -->
+        <a href="/2023/05/17/%E6%96%87%E7%AB%A0%E5%85%AB%E8%99%9F/">
           <div class="card-image col s12 m5">
             
             <img
@@ -1230,18 +1294,22 @@
               <br />
               <!-- 作者 -->
               <span class="publish-author">
-                 David 
+                
+                <!-- <i class="fas fa-user fa-fw"></i> -->
+                David 
               </span>
               <br />
               <!-- 日期 -->
               <span class="publish-date">
                 2023/05/17
               </span>
+              <br />
               <!-- 摘要 -->
               <div class="summary block-with-text">
                 
                 還記得一年前，有一位印尼默默無聞的年輕學生，在 Opensea 拍賣自拍照 NFT「Ghozali Everyday」爆紅的事情嗎？經過一年以後，動區今天帶讀者來重新回顧一下該事件，看看是否還有人在交易？ 
               </div>
+              <!-- <br> -->
               <!-- 標籤 -->
               
               <div class="card-action article-tags">
@@ -1256,65 +1324,6 @@
                 
                 <a href="/tags/%E5%8D%B0%E5%B0%BC/">
                   <span class="">#印尼</span>
-                </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-       
-      <div class="article col s12 m6 l6">
-        <!-- 圖片 -->
-        <a href="/2023/03/27/%E6%96%87%E7%AB%A0%E4%B8%89%E8%99%9F/">
-          <div class="card-image col s12 m5">
-            
-            <img
-              src="https://image.blocktempo.com/2023/05/tornado-750x375.png"
-              class="responsive-img"
-              alt="Tornado Cash暴雷》攻擊者完全控制治理權、幣安暫停TORN存款、幣崩跌50%"
-            />
-            
-          </div>
-          <!-- 資料 -->
-          <div class="card-content article-content col s12 m7">
-            <div class="publish-info">
-              <!-- 標題 -->
-              <span class="card-title">Tornado Cash暴雷》攻擊者完全控制治理權、幣安暫停TORN存款、幣崩跌50%</span>
-              <br />
-              <!-- 作者 -->
-              <span class="publish-author">
-                
-                <!-- <i class="fas fa-user fa-fw"></i> -->
-                James 
-              </span>
-              <br />
-              <!-- 日期 -->
-              <span class="publish-date">
-                2023/03/27
-              </span>
-              <br />
-              <!-- 摘要 -->
-              <div class="summary block-with-text">
-                
-                混幣協議 Tornado Cash 昨日遭遇治理攻擊，攻擊者已完全掌控協議治理控制權，迄今盜走超過 48.3 萬枚 TORN 代幣，受此影響，TORN 幣價一度崩跌超過 50% ，而由於 Tornado Cash 協議遭到治理攻擊，幣安稍早公告，將暫停 TORN 存款，直至另行通知。。 
-              </div>
-              <!-- <br> -->
-              <!-- 標籤 -->
-              
-              <div class="card-action article-tags">
-                
-                <a href="/tags/DAO/">
-                  <span class="">#DAO</span>
-                </a>
-                
-                <a href="/tags/%E5%B9%A3%E5%AE%89/">
-                  <span class="">#幣安</span>
-                </a>
-                
-                <a href="/tags/%E7%8A%AF%E7%BD%AA/">
-                  <span class="">#犯罪</span>
                 </a>
                 
               </div>

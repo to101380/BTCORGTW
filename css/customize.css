@@ -462,7 +462,7 @@ footer hr {
 }
 .nav .nav-menu {
   padding: 0px;
-  height: 110px;
+  height: 90px;
 }
 .nav .nav-menu .logo-block a {
   padding: 0px;
@@ -472,9 +472,9 @@ footer hr {
   padding-left: 0px;
   margin-right: 60px;
   padding-bottom: 0px;
-  width: 69px;
-  height: 42px;
-  margin-top: 34px;
+  width: 57px;
+  height: 35px;
+  margin-top: 29px;
   margin-bottom: 34px;
 }
 .nav .nav-menu a {
@@ -483,7 +483,7 @@ footer hr {
   line-height: 30px;
   height: auto;
   font-style: normal;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 40px;
 }
 .nav .nav-menu i {
@@ -494,7 +494,7 @@ footer hr {
   margin-bottom: 40px;
 }
 .nav .nav-menu .right {
-  height: 110px;
+  height: 90px;
 }
 .nav .nav-menu .right a {
   height: 100%;
@@ -506,7 +506,7 @@ footer hr {
 .nav .nav-menu .modal-trigger #searchIcon {
   margin-top: 40px;
   margin-bottom: 40px;
-  line-height: 30px;
+  line-height: 10px;
   font-size: 25px;
   zoom: 1 !important;
 }
@@ -933,7 +933,7 @@ nav a.sidenav-trigger i {
   .nav .nav-menu .right #searchIcon {
     font-size: 20px;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 15px;
   }
   .nav .nav-menu .right i {
@@ -970,8 +970,4 @@ nav a.sidenav-trigger i {
   }
 }
 
-@media (max-width: 420px) {
-  .tagCtrl {
-    display: none;
-  }
-}
+
