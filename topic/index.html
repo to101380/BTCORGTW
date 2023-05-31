@@ -105,9 +105,9 @@
       </button>
     </div>
     <nav id="headNav" class="bg-color white nav-transparent" style="height: auto">
-      <div class="bitcoin-price grey lighten-4">
+      <div class="bitcoin-price lighten-4">
         <div class="btc-price">
-          <div class="swiper-container" style="height: 45px">
+          <div class="swiper-container" style="height: 35px">
             <div class="container">
               <div class="swiper myBtcSwiper">
                 <div class="swiper-wrapper">
@@ -150,7 +150,7 @@
                   <!-- BTC價格 -->
                   <div
                     class="swiper-slide swiper-btc-block-value"
-                    style="height: 60px; max-width: 169px;font-size: 80%;"
+                    style="height: 60px; max-width: 169px;font-size: 12px;"
                   >
                     <a href="">
                       <span
@@ -164,7 +164,7 @@
                         =
                         <span
                           id="header_crypto_price"
-                          style="display: inline-block; margin: 0px;font-size: 80%;"
+                          style="display: inline-block; margin: 0px;font-size: 12px;"
                         >
                         </span>
                         USD
@@ -497,16 +497,16 @@
                         if (element.substring(0, 4) == "gian") {
                           let gain = parseFloat(element.split("=")[1]);
                           if (gain > 0) {
-                            document
-                              .getElementById(
-                                `price-${parseInt(element[4]) + 1}_gain_img`
-                              )
-                              .classList.add("fa-caret-up");
-                            document
-                              .getElementById(
-                                `price-${parseInt(element[4]) + 1}_gain_img`
-                              )
-                              .classList.add("green-text");
+                            // document
+                            //   .getElementById(
+                            //     `price-${parseInt(element[4]) + 1}_gain_img`
+                            //   )
+                            //   .classList.add("fa-caret-up");
+                            // document
+                            //   .getElementById(
+                            //     `price-${parseInt(element[4]) + 1}_gain_img`
+                            //   )
+                            //   .classList.add("green-text");
                             document
                               .getElementById(
                                 `price-${parseInt(element[4]) + 1}_gain_text`
@@ -514,16 +514,16 @@
                               .classList.add("green-text");
                           } else if (gain == 0) {
                           } else {
-                            document
-                              .getElementById(
-                                `price-${parseInt(element[4]) + 1}_gain_img`
-                              )
-                              .classList.add("fa-caret-down");
-                            document
-                              .getElementById(
-                                `price-${parseInt(element[4]) + 1}_gain_img`
-                              )
-                              .classList.add("red-text");
+                            // document
+                            //   .getElementById(
+                            //     `price-${parseInt(element[4]) + 1}_gain_img`
+                            //   )
+                            //   .classList.add("fa-caret-down");
+                            // document
+                            //   .getElementById(
+                            //     `price-${parseInt(element[4]) + 1}_gain_img`
+                            //   )
+                            //   .classList.add("red-text");
                             document
                               .getElementById(
                                 `price-${parseInt(element[4]) + 1}_gain_text`
@@ -531,9 +531,9 @@
                               .classList.add("red-text");
                             gain *= -1;
                           }
-                          document.getElementById(
-                            `price-${parseInt(element[4]) + 1}_gain`
-                          ).innerHTML = gain + "%";
+                          // document.getElementById(
+                          //   `price-${parseInt(element[4]) + 1}_gain`
+                          // ).innerHTML = gain + "%";
                         } else if (element.substring(0, 5) == "value") {
                           document.getElementById(
                             `price-${parseInt(element[5]) + 1}`
@@ -562,7 +562,7 @@
                 <div class="swiper-button-next">
                   <i
                     class="fa-solid fa-chevron-right swiper-button-right top10swiper"
-                    style="color: black"
+                    style="color: black; background-color: white;"
                     id="next"
                   ></i>
                 </div>
@@ -570,7 +570,7 @@
                 <div class="swiper-button-prev" style="z-index: 999">
                   <i
                     class="fa-solid fa-chevron-left swiper-button-left top10swiper"
-                    style="color: black"
+                    style="color: black; background-color: white;"
                     id="prev"
                   ></i>
                 </div>
@@ -853,14 +853,14 @@
       <div class="swiper-button-next" style="right: 14px;">       
         <i
           class="fa-solid fa-chevron-right"
-          style="color: black;position: relative;width: 100%;top: 3px;right: -19px;background-color: white; display:flex; align-items: center;"
+          style="color: black;position: relative;width: 100%;top: 3px;right: -19px;background-color: white; display:flex; align-items: center; font-size: 16px;"
           id="prev"
         ></i>
       </div>
       <div class="swiper-button-prev" style="left: 14px;">
         <i
           class="fa-solid fa-chevron-left"
-          style="color: black;position: relative;width: 100%;top: 3px;left: -14px;background-color: white; display:flex; align-items: center;"
+          style="color: black;position: relative;width: 100%;top: 3px;left: -14px;background-color: white; display:flex; align-items: center; font-size: 16px;"
           id="prev"
         ></i>
       </div>
@@ -1026,18 +1026,6 @@
   
   <div class="topic-block container">
     
-      <a href="/tags/比特幣/">
-        <div style="font-size: 22px;">比特幣<span style="font-size: 20px;">(2)</span></div>
-      </a>
-    
-      <a href="/tags/ETH/">
-        <div style="font-size: 22px;">ETH<span style="font-size: 20px;">(4)</span></div>
-      </a>
-    
-      <a href="/tags/加密貨幣/">
-        <div style="font-size: 22px;">加密貨幣<span style="font-size: 20px;">(2)</span></div>
-      </a>
-    
       <a href="/tags/任天堂/">
         <div style="font-size: 22px;">任天堂<span style="font-size: 20px;">(1)</span></div>
       </a>
@@ -1048,14 +1036,6 @@
     
       <a href="/tags/交易所/">
         <div style="font-size: 22px;">交易所<span style="font-size: 20px;">(1)</span></div>
-      </a>
-    
-      <a href="/tags/NFT/">
-        <div style="font-size: 22px;">NFT<span style="font-size: 20px;">(2)</span></div>
-      </a>
-    
-      <a href="/tags/印尼/">
-        <div style="font-size: 22px;">印尼<span style="font-size: 20px;">(2)</span></div>
       </a>
     
       <a href="/tags/DAO/">
@@ -1070,12 +1050,24 @@
         <div style="font-size: 22px;">犯罪<span style="font-size: 20px;">(1)</span></div>
       </a>
     
-      <a href="/tags/私人機構報告/">
-        <div style="font-size: 22px;">私人機構報告<span style="font-size: 20px;">(2)</span></div>
+      <a href="/tags/比特幣/">
+        <div style="font-size: 22px;">比特幣<span style="font-size: 20px;">(2)</span></div>
       </a>
     
-      <a href="/tags/區塊鏈/">
-        <div style="font-size: 22px;">區塊鏈<span style="font-size: 20px;">(2)</span></div>
+      <a href="/tags/ETH/">
+        <div style="font-size: 22px;">ETH<span style="font-size: 20px;">(4)</span></div>
+      </a>
+    
+      <a href="/tags/加密貨幣/">
+        <div style="font-size: 22px;">加密貨幣<span style="font-size: 20px;">(2)</span></div>
+      </a>
+    
+      <a href="/tags/NFT/">
+        <div style="font-size: 22px;">NFT<span style="font-size: 20px;">(2)</span></div>
+      </a>
+    
+      <a href="/tags/印尼/">
+        <div style="font-size: 22px;">印尼<span style="font-size: 20px;">(2)</span></div>
       </a>
     
       <a href="/tags/比特/">
@@ -1088,6 +1080,14 @@
     
       <a href="/tags/ICO/">
         <div style="font-size: 22px;">ICO<span style="font-size: 20px;">(1)</span></div>
+      </a>
+    
+      <a href="/tags/私人機構報告/">
+        <div style="font-size: 22px;">私人機構報告<span style="font-size: 20px;">(2)</span></div>
+      </a>
+    
+      <a href="/tags/區塊鏈/">
+        <div style="font-size: 22px;">區塊鏈<span style="font-size: 20px;">(2)</span></div>
       </a>
     
   </div>
