@@ -1184,30 +1184,26 @@
 
     <div class="card-content">
       <div id="articleContent">
-        <h4 id="什麼是-SHA256？"><a href="#什麼是-SHA256？" class="headerlink" title="什麼是 SHA256？"></a>什麼是 SHA256？</h4><p>　　<br>比特幣採用的是 SHA256 的雜湊演算法，在此先介紹 SHA 的原理，以便理解比特幣的運作原理。<br>　　<br>安全雜湊演算法（Secure Hash Algorithm, SHA）是密碼雜湊函數的家族，也是美國聯邦資訊處理標準（FIPS）認證的安全雜湊演算法，用於將輸入（input）的訊息轉換為固定長度字串的數值（output），這個數值稱為雜湊值（Hash），通常稱為訊息摘要（Message Digest）或摘要（Digest）。<br>　　<br>根據官方標準描述，這些演算法之所以稱作「安全」，是基於以下二點：</p>
-<ol>
-<li>由訊息摘要反推原輸入訊息，從計算理論上來說是很困難的。</li>
-<li>想要找到二組不同的訊息對應到相同的訊息摘要，從計算理論上來說也是很困難的。任何對輸入訊息的變動，都有很高的機率導致其產生的訊息摘要迥異。</li>
-</ol>
-<p>　　<br>因此安全雜湊演算法具有以下特點：</p>
-<ol>
-<li>固定的長度：無論輸入的原始內容為何，輸出的長度相同。</li>
-<li>輸入的原始內容（訊息）相同，則輸出的結果（摘要）相同。</li>
-<li>輸入的原始內容（訊息）不同，則輸出的結果（摘要）不同（機率上）。</li>
-<li>不可逆推：無法從結果反推原始資料。</li>
-</ol>
-<p>　　　　<br>安全雜湊演算法具有以下優點：</p>
-<ol>
-<li>驗證資料的完整性</li>
-<li>保護原始資料</li>
-<li>縮減資料大小</li>
-</ol>
-<p>　　<br>SHA 家族分為 SHA0、SHA1、SHA2、SHA3，是由美國國家安全局（NSA）研發，比特幣採用的 SHA256 演算法是 SHA2 的演算法之一，能生出 256 位元的輸出值，是一種單向函數。
-　　</p>
-<p>雜湊函數的運作方式（範例）</p>
-<p>input：你好<br>ouput：670d9743542cae3ea7ebe36af56bd53648b0a1126162e78d81a32934a711302e<br>　<br>input：你好!<br>ouput：ce89dc2845fefe35a737b20d2834dd4430eb3aaf43e7dd6445b7809d56ea16b2</p>
-<p>這個範例演示了即使輸入的原始資料只有微小的變動，輸出的雜湊值也會完全不同。
-　　</p>
+        <h4 id="如何使用比特幣錢包"><a href="#如何使用比特幣錢包" class="headerlink" title="如何使用比特幣錢包"></a>如何使用比特幣錢包</h4><h5 id="前言與基本介紹"><a href="#前言與基本介紹" class="headerlink" title="前言與基本介紹"></a>前言與基本介紹</h5><p>許多人想要購買比特幣，要先知道擁有一個自己持有的錢包，才能夠真正的擁有比特幣． </p>
+<p>比特幣除了存在自己的錢包之外，也有許多人放在交易所之中，但這代表控制在交易所手上，而不是在自己的手上．所以擁有並控制自己的錢包，是所有要真正參與比特幣投資的用戶，都該學習的技能． </p>
+<p>比特幣的精神就是去中心化的，而點對點的交易就是比特幣的特色，不需要如政府、銀行等中間機構擔保．這篇文章不繼續述及原理以及精神．僅就實際操作面上來介紹，理解錢包的重要性以及使用方式，給用戶們了解如何參與． </p>
+<p>私鑰，最初始的狀態是一串字碼，通常會轉換成 助記詞 或是被稱作 備份短語 等不同的稱呼，都是代表著一樣的東西呈現的不同格式． </p>
+<p>錢包所提供的私鑰&#x2F;助記詞，是能夠控制自己手上比特幣的最高權限，絕對不能搞丟，不能外洩．</p>
+<p>一般建議存放的方式，就是將助記詞&#x2F;私鑰，用紙筆手寫抄錄下來，異地妥善備份．</p>
+<p>只要助記詞&#x2F;私鑰確實還安全存在，即使手機裝置、或是硬體錢包壞掉，一樣可以從新的裝置，或是其他軟體中將備份好的助記詞&#x2F;私鑰導入，將比特幣等資產資料回覆於新的裝置、軟體上．</p>
+<h5 id="私鑰-x2F-助記詞-產生方式"><a href="#私鑰-x2F-助記詞-產生方式" class="headerlink" title="私鑰 &#x2F; 助記詞 產生方式"></a>私鑰 &#x2F; 助記詞 產生方式</h5><p>目前市面上有許多不同的錢包軟體提供商，或是開源軟件． </p>
+<p>用戶的私鑰或助記詞，在軟體在自己的電腦或是手機裝置中，本地生成．</p>
+<p>助記詞由 12&#x2F;18&#x2F;24 不同的英文單詞按照順序組成．目前多數的錢包軟體會以12個英文單詞的方式產生． </p>
+<p>再次提醒，這12個英文單詞代表你的錢包的最高訪問權限，不可遺失或是外洩．妥善備份，重視自己的資產儲存方式． </p>
+<p>下圖為 Trust Wallet 的助記詞顯示範例．</p>
+<p><img src="https://i.imgur.com/ndUyjEI.jpeg"></p>
+<h5 id="收取比特幣"><a href="#收取比特幣" class="headerlink" title="收取比特幣"></a>收取比特幣</h5><p>創建好自己的錢包之後，就能夠收取比特幣．比特幣地址有兩種主要格式，一串字碼或是QrCode </p>
+<p>bc1qlnudpnvdukyz6rgvj2kure48le8dw8q86rawz3 </p>
+<p>下圖為 Coinbase Wallet 的 Qrcode 顯示範例．</p>
+<p><img src="https://i.imgur.com/7SiHC5c.jpeg"></p>
+<h5 id="結語與補充"><a href="#結語與補充" class="headerlink" title="結語與補充"></a>結語與補充</h5><p>不同的錢包軟體都是共同在區塊鏈的技術規範下，搭建各自的UI介面．有著各自的優缺點與特色．在日後後續補充介紹． </p>
+<p>可能會遇到的問題會有交易所不支援收款地址，這是一些技術資訊過慢的交易所未更新的防呆機制，無法支援比特幣新增的地址格式，目前主要有 SegWit 還有 Legacy ．這都是在比特幣之中，不同的業者要各自完善搭建的工程．</p>
+<p>　　</p>
  
       </div>
 
@@ -1255,8 +1251,63 @@
     <div class="row article-row">
       
       <div class="article col s12 m6 l6">
-        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E4%BA%8C%E8%99%9F/">
+        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E4%BA%94%E8%99%9F/">
           <!-- 圖片 -->
+          <div class="card-image col s12 m5">
+            
+            <img
+              src="https://i.imgur.com/J0oK6nC.png"
+              class="responsive-img"
+              alt="什麼是 SHA256"
+            />
+            
+          </div>
+          <!-- 資料 -->
+          <div class="card-content article-content col s12 m7">
+            <div class="publish-info">
+              <!-- 標題 -->
+              <span class="card-title">什麼是 SHA256</span>
+              <br />
+              <!-- 作者 -->
+              <span class="publish-author">
+                 編輯室 
+              </span>
+              <br />
+              <!-- 日期 -->
+              <span class="publish-date">
+                2023/05/22
+              </span>
+              <!-- 摘要 -->
+              <div class="summary block-with-text">
+                
+                安全雜湊演算法（Secure Hash Algorithm, SHA）是密碼雜湊函數的家族，也是美國聯邦資訊處理標準（FIPS）認證的安全雜湊演算法 
+              </div>
+              <!-- 標籤 -->
+              
+              <div class="card-action article-tags">
+                
+                <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
+                  <span class="">#比特幣</span>
+                </a>
+                
+                <a href="/tags/SHA256/">
+                  <span class="">#SHA256</span>
+                </a>
+                
+                <a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95/">
+                  <span class="">#演算法</span>
+                </a>
+                
+              </div>
+              
+            </div>
+          </div>
+        </a>
+      </div>
+       
+      <div class="article col s12 m6 l6">
+        <!-- 圖片 -->
+        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E4%BA%8C%E8%99%9F/">
           <div class="card-image col s12 m5">
             
             <img
@@ -1274,18 +1325,22 @@
               <br />
               <!-- 作者 -->
               <span class="publish-author">
-                 編輯室 
+                
+                <!-- <i class="fas fa-user fa-fw"></i> -->
+                編輯室 
               </span>
               <br />
               <!-- 日期 -->
               <span class="publish-date">
                 2023/05/22
               </span>
+              <br />
               <!-- 摘要 -->
               <div class="summary block-with-text">
                 
                 HODL是一種在加密貨幣社區中常見的術語，源於一個拼寫錯誤。 
               </div>
+              <!-- <br> -->
               <!-- 標籤 -->
               
               <div class="card-action article-tags">
@@ -1300,61 +1355,6 @@
                 
                 <a href="/tags/Meme/">
                   <span class="">#Meme</span>
-                </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-       
-      <div class="article col s12 m6 l6">
-        <!-- 圖片 -->
-        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E4%B8%89%E8%99%9F/">
-          <div class="card-image col s12 m5">
-            
-            <img
-              src="https://i.imgur.com/fEm6t5S.png"
-              class="responsive-img"
-              alt="什麼是 Pizza Day"
-            />
-            
-          </div>
-          <!-- 資料 -->
-          <div class="card-content article-content col s12 m7">
-            <div class="publish-info">
-              <!-- 標題 -->
-              <span class="card-title">什麼是 Pizza Day</span>
-              <br />
-              <!-- 作者 -->
-              <span class="publish-author">
-                
-                <!-- <i class="fas fa-user fa-fw"></i> -->
-                編輯室 
-              </span>
-              <br />
-              <!-- 日期 -->
-              <span class="publish-date">
-                2023/05/22
-              </span>
-              <br />
-              <!-- 摘要 -->
-              <div class="summary block-with-text">
-                
-                比特幣有史以來第一次進行實物交易，證明了比特幣確實在現實世界也具備價持傳遞的功能。 
-              </div>
-              <!-- <br> -->
-              <!-- 標籤 -->
-              
-              <div class="card-action article-tags">
-                
-                <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
-                  <span class="">#比特幣</span>
-                </a>
-                
-                <a href="/tags/%E6%8A%AB%E8%96%A9/">
-                  <span class="">#披薩</span>
                 </a>
                 
               </div>
