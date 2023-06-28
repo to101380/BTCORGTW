@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="隱私政策聲明, 比特幣中文頻道">
-    <meta name="description" content="我們非常重視您的隱私。我們的網站不收集任何有關您的個人信息，如姓名、地址、電子郵件地址或電話號碼等。我們不會通過 cookie 或其他技術跟踪您的網絡活動。">
+    <meta name="keywords" content="partner, 比特幣中文頻道網站">
+    <meta name="description" content="比特幣中文頻道網站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>隱私政策聲明 | 比特幣中文頻道</title>
+    <title>partner | 比特幣中文頻道網站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
@@ -73,7 +73,7 @@
   <meta name="description" content="比特幣是一個共識網絡，是一種支付系統並且完全數位化的一種貨幣．是第一個由用戶建立並維護的點對點交易支付網路，去中心化並且不依賴於中央機構或中介人驗證">
 
   <!-- Facebook Meta Tags -->
-  <meta property="og:url" content="https://bitcoin.org.tw/">
+  <!-- <meta property="og:url" content="https://bitcoin.org.tw/"> -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="比特幣中文頻道網站">
   <meta property="og:description" content="比特幣是一個共識網絡，是一種支付系統並且完全數位化的一種貨幣．是第一個由用戶建立並維護的點對點交易支付網路，去中心化並且不依賴於中央機構或中介人驗證">
@@ -107,8 +107,8 @@
   <nav id="headNav" class="bg-color white nav-transparent" style="height: auto">
     <div class="bitcoin-price lighten-4">
       <div class="btc-price">
-        <div class="swiper-container" style="height: 35px">
-          <div class="container">
+        <div class="swiper-container" style="height: 55px">
+          <div class="container nav">
             <div class="swiper myBtcSwiper">
               <div class="swiper-wrapper">
                 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -208,9 +208,12 @@
               </div>
             </div>
           </div>
-        </div>
+        </>
       </div>
-      <div class="container">
+
+      <hr style="border-top: 0px; margin: 0px;width: 100%; border-bottom: 1px solid #f2f2f2; position: absolute; left: 0px;">
+
+      <div class="container nav">
         <div class="stock-price">
           <div class="swiper-container" style="height: 55px; font-size: 80%;">
             <div class="swiper mySwiper2" style="height: 60px">
@@ -513,34 +516,31 @@
                               `price-${parseInt(element[4]) + 1}_gain_text`
                             )
                             .classList.add("green-text");
+                            document.getElementById(
+                            `price-${parseInt(element[4]) + 1}_gain`
+                          ).innerHTML = '+' + gain + "%";
                         } else if (gain == 0) {
                         } else {
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_img`
-                            )
-                            .classList.add("fa-caret-down");
-                          document
-                            .getElementById(
-                              `price-${parseInt(element[4]) + 1}_gain_img`
-                            )
-                            .classList.add("red-text");
+                          // document
+                          //   .getElementById(
+                          //     `price-${parseInt(element[4]) + 1}_gain_img`
+                          //   )
+                          //   .classList.add("fa-caret-down");
+                          // document
+                          //   .getElementById(
+                          //     `price-${parseInt(element[4]) + 1}_gain_img`
+                          //   )
+                          //   .classList.add("red-text");
                           document
                             .getElementById(
                               `price-${parseInt(element[4]) + 1}_gain_text`
                             )
                             .classList.add("red-text");
-                          gain *= -1;
-                        }
 
-                        if (gain > 0) {
                           document.getElementById(
                             `price-${parseInt(element[4]) + 1}_gain`
-                          ).innerHTML = '+' + gain + "%";
-                        } else {
-                          document.getElementById(
-                            `price-${parseInt(element[4]) + 1}_gain`
-                          ).innerHTML = '-' + gain + "%";
+                          ).innerHTML = gain + "%";
+                          gain *= -1;
                         }
 
                       } else if (element.substring(0, 5) == "value") {
@@ -579,7 +579,7 @@
               <div class="swiper-button-prev" style="z-index: 999">
                 <i
                   class="fa-solid fa-chevron-left swiper-button-left top10swiper"
-                  style="color: black; background-color: white;"
+                  style="color: black; background-color: white; left: -18px;"
                   id="prev"
                 ></i>
               </div>
@@ -616,6 +616,8 @@
           </div>
         </div>
       </div>
+      
+      <hr style="border-top: 0px; margin: 0px;width: 100%; border-bottom: 1px solid #f2f2f2; position: absolute; left: 0px;">
     </div>
     <!--移除頂部廣告-->
     <script>
@@ -710,7 +712,7 @@
         
           <li class="hide-on-med-and-up nav-item">
             
-            <a href="/about" class="waves-effect waves-light black-text bold">
+            <a href="/about" class="waves-effect waves-light black-text bold" style="line-height: 100%;">
               
               <span>關於</span>
             </a>
@@ -719,7 +721,7 @@
           
           <li class="hide-on-med-and-up nav-item">
             
-            <a href="/buybitcoin" class="waves-effect waves-light black-text bold">
+            <a href="/buybitcoin" class="waves-effect waves-light black-text bold" style="line-height: 100%;">
               
               <span>購買比特幣</span>
             </a>
@@ -728,14 +730,16 @@
           
           <li class="hide-on-med-and-up nav-item">
             
-            <a href="/topic" class="waves-effect waves-light black-text bold">
+            <a href="/topic" class="waves-effect waves-light black-text bold" style="line-height: 100%;">
               
               <span>關鍵字</span>
             </a>
             
           </li>
           
-        <div class="col s12 m4 l4 social-link hide-on-med-and-up nav-item">
+
+          <!-- 各種社群 icon -->
+        <!-- <div class="col s12 m4 l4 social-link hide-on-med-and-up nav-item">
     <a href="https://www.facebook.com/facebook/?brand_redir=123739327653840" class="tooltipped" target="_blank" data-tooltip="Facebook" data-position="top" data-delay="50">
         <i class="fab fa-facebook-f black-text"></i>
     </a>
@@ -770,7 +774,7 @@
         <i class="fas fa-rss black-text"></i>
     </a>
 
-</div>
+</div> -->
 
       </ul>
     </li>
@@ -782,7 +786,7 @@
 	</div>
 
   </ul>
-
+  <hr style="border-top: 0px; margin: 0px;width: 100%; border-bottom: 1px solid #f2f2f2; position: absolute; left: 0px;">
         
 </div>
 
@@ -792,7 +796,7 @@
         
         <img src="/medias/logo.png" class="logo-img circle responsive-img">
         
-        <div class="logo-name">比特幣中文頻道</div>
+        <div class="logo-name">比特幣中文頻道網站</div>
         <div class="logo-desc">
             
             Never really desperate, only the lost of the soul.
@@ -862,14 +866,14 @@
       <div class="swiper-button-next" style="right: 14px;">       
         <i
           class="fa-solid fa-chevron-right"
-          style="color: black;position: relative;width: 100%;top: 3px;right: -19px;background-color: white; display:flex; align-items: center; font-size: 16px;"
+          style="color: black;position: relative;width: 100%;right: -19px;background-color: white; display:flex; align-items: center; font-size: 16px;"
           id="prev"
         ></i>
       </div>
       <div class="swiper-button-prev" style="left: 14px;">
         <i
           class="fa-solid fa-chevron-left"
-          style="color: black;position: relative;width: 100%;top: 3px;left: -14px;background-color: white; display:flex; align-items: center; font-size: 16px;"
+          style="color: black;position: relative;width: 100%;left: -14px;background-color: white; display:flex; align-items: center; font-size: 16px;"
           id="prev"
         ></i>
       </div>
@@ -1093,7 +1097,7 @@
 
     <!-- 標題 -->
 
-    <div class="post-title" style="font-weight: bold">隱私政策聲明</div>
+    <div class="post-title" style="font-weight: bold">partner</div>
 
     <!-- 資訊 -->
 
@@ -1105,28 +1109,26 @@
         by -
         <a
           class="point-color post-info-author"
-          href="/author/Bitcoin.zh"
+          href="/author/"
           rel="external nofollow noreferrer"
           ><span style="color: rgb(177, 177, 177); margin-right: 8px"
-            >Bitcoin.zh</span
+            ></span
           ></a
         >
         -
         <!-- 日期 -->
         
         <span style="margin-right: 8px"
-          >2023/03/27</span
+          >2022/09/20</span
         >
          
 
         <!-- tag -->
-         
-        <a href="/tags/%E9%9A%B1%E7%A7%81%E6%94%BF%E7%AD%96%E8%81%B2%E6%98%8E/">
-          <span class="tagCtrl point-color" style="color: rgb(177, 177, 177)"
-            >- #隱私政策聲明</span
-          >
-        </a>
-         
+        
+        <span class="point-color" style="color: rgb(177, 177, 177)"
+          >無標籤</span
+        >
+        
       </div>
     </div>
 
@@ -1136,50 +1138,20 @@
       
       <div class="img-bg"></div>
       
-      <!-- 引言         -->
-      <div
-        class="post-info"
-        style="
-          border-left: 5px solid rgb(238, 238, 238);
-          margin-top: 20px;
-          margin-bottom: 35px;
-        "
-      >
-        <p
-          class="q-content"
-          style="
-            margin: 0px 10px;
-            color: #999999;
-            font-size: 16px;
-            line-height: 30px;
-          "
-        >
-          我們非常重視您的隱私。我們的網站不收集任何有關您的個人信息，如姓名、地址、電子郵件地址或電話號碼等。我們不會通過 cookie 或其他技術跟踪您的網絡活動。<br />
-        </p>
-      </div>
-      
     </div>
 
      
 
     <div class="card-content">
       <div id="articleContent">
-        <h4 id="隱私政策聲明"><a href="#隱私政策聲明" class="headerlink" title="隱私政策聲明"></a>隱私政策聲明</h4><p>我們非常重視您的隱私。我們的網站不收集任何有關您的個人信息，如姓名、地址、電子郵件地址或電話號碼等。我們不會通過 cookie 或其他技術跟踪您的網絡活動。</p>
-<p>儘管我們不收集任何個人信息，但我們可能會通過網站日誌收集一些匿名數據，例如您的瀏覽器類型和操作系統等信息。這些信息只用於統計和分析我們網站的流量，以及提高網站的性能和用戶體驗。</p>
-<p>請注意，我們的網站可能包含第三方鏈接，這些鏈接指向其他網站，我們無法控制這些網站的隱私政策。因此，我們建議您在訪問這些網站之前查看其隱私政策。</p>
-<p>如果您有任何關於我們的隱私政策的問題，請聯繫我們。</p>
- 
+         
       </div>
 
       <!--<div class="tag_share" style="display: block;">
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E9%9A%B1%E7%A7%81%E6%94%BF%E7%AD%96%E8%81%B2%E6%98%8E/">
-                                    <span class="chip bg-color">隱私政策聲明</span>
-                                </a>
-                            
+                            <span class="chip bg-color">無標籤</span>
                         </div>
                     
                 </div>
@@ -1201,117 +1173,7 @@
       </div>
     </div>
     <div class="row article-row">
-      
-      <div class="article col s12 m6 l6">
-        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E5%9B%9B%E8%99%9F/">
-          <!-- 圖片 -->
-          <div class="card-image col s12 m5">
-            
-            <img
-              src="https://i.imgur.com/h8T2PhV.png"
-              class="responsive-img"
-              alt="如何使用比特幣錢包"
-            />
-            
-          </div>
-          <!-- 資料 -->
-          <div class="card-content article-content col s12 m7">
-            <div class="publish-info">
-              <!-- 標題 -->
-              <span class="card-title">如何使用比特幣錢包</span>
-              <br />
-              <!-- 作者 -->
-              <span class="publish-author">
-                 編輯室 
-              </span>
-              <br />
-              <!-- 日期 -->
-              <span class="publish-date">
-                2023/05/22
-              </span>
-              <!-- 摘要 -->
-              <div class="summary block-with-text">
-                
-                要先知道擁有一個自己持有的錢包，才能夠真正的擁有比特幣． 
-              </div>
-              <!-- 標籤 -->
-              
-              <div class="card-action article-tags">
-                
-                <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
-                  <span class="">#比特幣</span>
-                </a>
-                
-                <a href="/tags/%E9%8C%A2%E5%8C%85/">
-                  <span class="">#錢包</span>
-                </a>
-                
-                <a href="/tags/%E7%A7%81%E9%91%B0/">
-                  <span class="">#私鑰</span>
-                </a>
-                
-                <a href="/tags/%E5%8A%A9%E8%A8%98%E8%A9%9E/">
-                  <span class="">#助記詞</span>
-                </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-       
-      <div class="article col s12 m6 l6">
-        <!-- 圖片 -->
-        <a href="/2023/03/27/%E6%96%87%E7%AB%A0%E5%85%AD%E8%99%9F/">
-          <div class="card-image col s12 m5">
-             
-            <img
-              src="/medias/featureimages/3.jpg"
-              class="responsive-img"
-              alt="免責聲明"
-            />
-            
-          </div>
-          <!-- 資料 -->
-          <div class="card-content article-content col s12 m7">
-            <div class="publish-info">
-              <!-- 標題 -->
-              <span class="card-title">免責聲明</span>
-              <br />
-              <!-- 作者 -->
-              <span class="publish-author">
-                
-                <!-- <i class="fas fa-user fa-fw"></i> -->
-                Bitcoin.zh 
-              </span>
-              <br />
-              <!-- 日期 -->
-              <span class="publish-date">
-                2023/03/27
-              </span>
-              <br />
-              <!-- 摘要 -->
-              <div class="summary block-with-text">
-                
-                網站的所有內容旨在提供一般性信息和觀點，不應視為投資建議或其他形式的專業意見。 
-              </div>
-              <!-- <br> -->
-              <!-- 標籤 -->
-              
-              <div class="card-action article-tags">
-                
-                <a href="/tags/%E5%85%8D%E8%B2%AC%E8%81%B2%E6%98%8E/">
-                  <span class="">#免責聲明</span>
-                </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-      
+         
     </div>
   </div>
 </article>  <!-- 代码块功能依赖 -->
@@ -1356,8 +1218,8 @@
         </div>
         <div class="footer-items" style="width: auto">          
             <div class="footer-item" style="width: auto; color: black;"><a href="/">合作夥伴</a></div>
-            <div class="footer-item" style="width: auto; color: black;"><a href="https://bitcoin.org.tw/2023/03/27/%E6%96%87%E7%AB%A0%E5%85%AD%E8%99%9F/">免責聲明</a></div>
-            <div class="footer-item" style="width: auto; color: black;"><a href="https://bitcoin.org.tw/2023/03/27/%E6%96%87%E7%AB%A0%E4%B8%83%E8%99%9F/">隱私政策</a></div>
+            <div class="footer-item" style="width: auto; color: black;"><a href="/disclaimer">免責聲明</a></div>
+            <div class="footer-item" style="width: auto; color: black;"><a href="/privatepolicy">隱私政策</a></div>
         </div>
     </div>
     <!-- 第二區 -->
@@ -1409,7 +1271,7 @@
     <div class="footer-nfts white"  style="display: none">
         <div class="container">
             <div class="row">
-                <h1 class="nfts-heading">精選 NFT 欣賞</h1>
+                <p class="nfts-heading">精選 NFT 欣賞</p>
             </div>
             <div class="row nft-rows">
                 <div class="col s12 m6 l6 nft-row">
