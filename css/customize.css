@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 h1 {
-  margin-left: 10px;
+  margin-left: 1px;
 }
 .responsive-img {
   object-fit: cover;
@@ -525,13 +525,13 @@ footer hr {
   border-bottom: 1px solid #f2f2f2;
 }
 .slide-container .swiper {
-  height: 60px;
+  height: 0px;
 }
 nav,
 nav .nav-wrapper i,
 nav a.sidenav-trigger,
 nav a.sidenav-trigger i {
-  line-height: 60px !important;
+  line-height: 45px !important;
 }
 .swiper .tagRight {
   position: absolute;
