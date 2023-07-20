@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="從 J 粒子到宇宙射線：丁肇中的實驗物理之旅, 比特幣中文頻道網站">
-    <meta name="description" content="丁肇中是享譽全球的物理學家，他的研究為現代物理學奠定了基礎，也讓他獲得 1976 年的諾貝爾物理獎。丁肇中是中央研究院院士，也是現任麻省理工學院的物理學教授。歷經數十年實驗物理的研究之路，他用一次次的實驗結果打破原本的理論認知，為物理學開創了新的道路。丁肇中如何從 J 粒子的發現，走到最前沿研究宇宙射線，探索宇宙的起源與未知？中研院「研之有物」梳理記錄丁肇中 2022 年在院內物理研究所的演講內容，介紹他在物理學領域的傑出成就以及科學家的體悟。">
+    <meta name="keywords" content="封存: 2023/7, 比特幣中文頻道網站">
+    <meta name="description" content="比特幣中文頻道網站">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>從 J 粒子到宇宙射線：丁肇中的實驗物理之旅 | 比特幣中文頻道網站</title>
+    <title>封存: 2023/7 | 比特幣中文頻道網站</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     
@@ -75,7 +75,7 @@
   <!-- Facebook Meta Tags -->
   <!-- <meta property="og:url" content="https://bitcoin.org.tw/"> -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="從 J 粒子到宇宙射線：丁肇中的實驗物理之旅 | 比特幣中文頻道網站">
+  <meta property="og:title" content="封存: 2023/7 | 比特幣中文頻道網站">
   <meta property="og:description" content="比特幣是一個共識網絡，是一種支付系統並且完全數位化的一種貨幣．是第一個由用戶建立並維護的點對點交易支付網路，去中心化並且不依賴於中央機構或中介人驗證">
   <meta property="og:image" content="https://i.pinimg.com/originals/bd/6b/9b/bd6b9b463bebafce5a14227216ed3266.png?fbclid=IwAR0vgygeWgRHNw74RMnvLH7Zf-I03QouLp1nelgmLBk_jsR2SlJqq7X3z64">
 
@@ -83,7 +83,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="bitcoin.org.tw">
   <meta property="twitter:url" content="https://bitcoin.org.tw/">
-  <meta name="twitter:title" content="從 J 粒子到宇宙射線：丁肇中的實驗物理之旅 | 比特幣中文頻道網站">
+  <meta name="twitter:title" content="封存: 2023/7 | 比特幣中文頻道網站">
   <meta name="twitter:description" content="比特幣是一個共識網絡，是一種支付系統並且完全數位化的一種貨幣．是第一個由用戶建立並維護的點對點交易支付網路，去中心化並且不依賴於中央機構或中介人驗證">
   <meta name="twitter:image" content="https://i.pinimg.com/originals/bd/6b/9b/bd6b9b463bebafce5a14227216ed3266.png?fbclid=IwAR0vgygeWgRHNw74RMnvLH7Zf-I03QouLp1nelgmLBk_jsR2SlJqq7X3z64">
 
@@ -1034,361 +1034,273 @@
   </nav>
 </header>
 
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                    subtitle
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="/libs/typed/typed.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
+
+
+    </div>
+</div>
+
+<main class="content">
+
+    
+    <div class="container archive-calendar">
+    <div class="card">
+        <div id="post-calendar" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
+<script type="text/javascript">
+    let myChart = echarts.init(document.getElementById('post-calendar'));
+
     
 
+    let option = {
+        title: {
+            top: 0,
+            text: '文章日历',
+            left: 'center',
+            textStyle: {
+                color: '#3C4858'
+            }
+        },
+        tooltip: {
+            padding: 10,
+            backgroundColor: '#555',
+            borderColor: '#777',
+            borderWidth: 1,
+            formatter: function (obj) {
+                var value = obj.value;
+                return '<div style="font-size: 14px;">' + value[0] + '：' + value[1] + '</div>';
+            }
+        },
+        visualMap: {
+            show: true,
+            showLabel: true,
+            categories: [0, 1, 2, 3, 4],
+            calculable: true,
+            inRange: {
+                symbol: 'rect',
+                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
+            },
+            itemWidth: 12,
+            itemHeight: 12,
+            orient: 'horizontal',
+            left: 'center',
+            bottom: 0
+        },
+        calendar: [{
+            left: 'center',
+            range: ["2022-07-20", "2023-07-20"],
+            cellSize: [13, 13],
+            splitLine: {
+                show: false
+            },
+            itemStyle: {
+                color: '#196127',
+                borderColor: '#fff',
+                borderWidth: 2
+            },
+            yearLabel: {
+                show: false
+            },
+            monthLabel: {
+                nameMap: 'cn',
+                fontSize: 11
+            },
+            dayLabel: {
+                formatter: '{start}  1st',
+                nameMap: 'cn',
+                fontSize: 11
+            }
+        }],
+        series: [{
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 0,
+            data: [["2022-07-20", 0], ["2022-07-21", 0], ["2022-07-22", 0], ["2022-07-23", 0], ["2022-07-24", 0], ["2022-07-25", 0], ["2022-07-26", 0], ["2022-07-27", 0], ["2022-07-28", 0], ["2022-07-29", 0], ["2022-07-30", 0], ["2022-07-31", 0], ["2022-08-01", 0], ["2022-08-02", 0], ["2022-08-03", 0], ["2022-08-04", 0], ["2022-08-05", 0], ["2022-08-06", 0], ["2022-08-07", 0], ["2022-08-08", 0], ["2022-08-09", 0], ["2022-08-10", 0], ["2022-08-11", 0], ["2022-08-12", 0], ["2022-08-13", 0], ["2022-08-14", 0], ["2022-08-15", 0], ["2022-08-16", 0], ["2022-08-17", 0], ["2022-08-18", 0], ["2022-08-19", 0], ["2022-08-20", 0], ["2022-08-21", 0], ["2022-08-22", 0], ["2022-08-23", 0], ["2022-08-24", 0], ["2022-08-25", 0], ["2022-08-26", 0], ["2022-08-27", 0], ["2022-08-28", 0], ["2022-08-29", 0], ["2022-08-30", 0], ["2022-08-31", 0], ["2022-09-01", 0], ["2022-09-02", 0], ["2022-09-03", 0], ["2022-09-04", 0], ["2022-09-05", 0], ["2022-09-06", 0], ["2022-09-07", 0], ["2022-09-08", 0], ["2022-09-09", 0], ["2022-09-10", 0], ["2022-09-11", 0], ["2022-09-12", 0], ["2022-09-13", 0], ["2022-09-14", 0], ["2022-09-15", 0], ["2022-09-16", 0], ["2022-09-17", 0], ["2022-09-18", 0], ["2022-09-19", 0], ["2022-09-20", 0], ["2022-09-21", 0], ["2022-09-22", 0], ["2022-09-23", 0], ["2022-09-24", 0], ["2022-09-25", 0], ["2022-09-26", 0], ["2022-09-27", 0], ["2022-09-28", 0], ["2022-09-29", 0], ["2022-09-30", 0], ["2022-10-01", 0], ["2022-10-02", 0], ["2022-10-03", 0], ["2022-10-04", 0], ["2022-10-05", 0], ["2022-10-06", 0], ["2022-10-07", 0], ["2022-10-08", 0], ["2022-10-09", 0], ["2022-10-10", 0], ["2022-10-11", 0], ["2022-10-12", 1], ["2022-10-13", 0], ["2022-10-14", 0], ["2022-10-15", 0], ["2022-10-16", 0], ["2022-10-17", 0], ["2022-10-18", 0], ["2022-10-19", 0], ["2022-10-20", 0], ["2022-10-21", 0], ["2022-10-22", 0], ["2022-10-23", 0], ["2022-10-24", 0], ["2022-10-25", 0], ["2022-10-26", 0], ["2022-10-27", 0], ["2022-10-28", 0], ["2022-10-29", 0], ["2022-10-30", 0], ["2022-10-31", 0], ["2022-11-01", 0], ["2022-11-02", 0], ["2022-11-03", 0], ["2022-11-04", 0], ["2022-11-05", 0], ["2022-11-06", 0], ["2022-11-07", 0], ["2022-11-08", 0], ["2022-11-09", 0], ["2022-11-10", 0], ["2022-11-11", 0], ["2022-11-12", 0], ["2022-11-13", 0], ["2022-11-14", 0], ["2022-11-15", 0], ["2022-11-16", 0], ["2022-11-17", 0], ["2022-11-18", 0], ["2022-11-19", 0], ["2022-11-20", 0], ["2022-11-21", 0], ["2022-11-22", 0], ["2022-11-23", 0], ["2022-11-24", 0], ["2022-11-25", 0], ["2022-11-26", 0], ["2022-11-27", 0], ["2022-11-28", 0], ["2022-11-29", 0], ["2022-11-30", 0], ["2022-12-01", 0], ["2022-12-02", 0], ["2022-12-03", 0], ["2022-12-04", 0], ["2022-12-05", 0], ["2022-12-06", 0], ["2022-12-07", 0], ["2022-12-08", 0], ["2022-12-09", 0], ["2022-12-10", 0], ["2022-12-11", 0], ["2022-12-12", 0], ["2022-12-13", 0], ["2022-12-14", 0], ["2022-12-15", 0], ["2022-12-16", 0], ["2022-12-17", 0], ["2022-12-18", 0], ["2022-12-19", 0], ["2022-12-20", 0], ["2022-12-21", 0], ["2022-12-22", 0], ["2022-12-23", 0], ["2022-12-24", 0], ["2022-12-25", 0], ["2022-12-26", 0], ["2022-12-27", 0], ["2022-12-28", 0], ["2022-12-29", 0], ["2022-12-30", 0], ["2022-12-31", 0], ["2023-01-01", 0], ["2023-01-02", 0], ["2023-01-03", 0], ["2023-01-04", 0], ["2023-01-05", 0], ["2023-01-06", 0], ["2023-01-07", 0], ["2023-01-08", 0], ["2023-01-09", 0], ["2023-01-10", 0], ["2023-01-11", 0], ["2023-01-12", 0], ["2023-01-13", 0], ["2023-01-14", 0], ["2023-01-15", 0], ["2023-01-16", 0], ["2023-01-17", 0], ["2023-01-18", 0], ["2023-01-19", 0], ["2023-01-20", 0], ["2023-01-21", 0], ["2023-01-22", 0], ["2023-01-23", 0], ["2023-01-24", 0], ["2023-01-25", 0], ["2023-01-26", 0], ["2023-01-27", 0], ["2023-01-28", 0], ["2023-01-29", 0], ["2023-01-30", 0], ["2023-01-31", 0], ["2023-02-01", 0], ["2023-02-02", 0], ["2023-02-03", 0], ["2023-02-04", 0], ["2023-02-05", 0], ["2023-02-06", 0], ["2023-02-07", 0], ["2023-02-08", 0], ["2023-02-09", 0], ["2023-02-10", 0], ["2023-02-11", 0], ["2023-02-12", 0], ["2023-02-13", 0], ["2023-02-14", 0], ["2023-02-15", 0], ["2023-02-16", 0], ["2023-02-17", 0], ["2023-02-18", 0], ["2023-02-19", 0], ["2023-02-20", 0], ["2023-02-21", 0], ["2023-02-22", 0], ["2023-02-23", 0], ["2023-02-24", 0], ["2023-02-25", 0], ["2023-02-26", 0], ["2023-02-27", 0], ["2023-02-28", 0], ["2023-03-01", 0], ["2023-03-02", 0], ["2023-03-03", 0], ["2023-03-04", 0], ["2023-03-05", 0], ["2023-03-06", 0], ["2023-03-07", 0], ["2023-03-08", 0], ["2023-03-09", 0], ["2023-03-10", 0], ["2023-03-11", 0], ["2023-03-12", 0], ["2023-03-13", 0], ["2023-03-14", 0], ["2023-03-15", 0], ["2023-03-16", 0], ["2023-03-17", 0], ["2023-03-18", 0], ["2023-03-19", 0], ["2023-03-20", 0], ["2023-03-21", 0], ["2023-03-22", 0], ["2023-03-23", 0], ["2023-03-24", 0], ["2023-03-25", 0], ["2023-03-26", 0], ["2023-03-27", 0], ["2023-03-28", 0], ["2023-03-29", 0], ["2023-03-30", 0], ["2023-03-31", 0], ["2023-04-01", 0], ["2023-04-02", 0], ["2023-04-03", 0], ["2023-04-04", 0], ["2023-04-05", 0], ["2023-04-06", 0], ["2023-04-07", 0], ["2023-04-08", 0], ["2023-04-09", 0], ["2023-04-10", 0], ["2023-04-11", 0], ["2023-04-12", 0], ["2023-04-13", 0], ["2023-04-14", 0], ["2023-04-15", 0], ["2023-04-16", 0], ["2023-04-17", 0], ["2023-04-18", 0], ["2023-04-19", 0], ["2023-04-20", 0], ["2023-04-21", 0], ["2023-04-22", 0], ["2023-04-23", 0], ["2023-04-24", 0], ["2023-04-25", 0], ["2023-04-26", 0], ["2023-04-27", 0], ["2023-04-28", 0], ["2023-04-29", 0], ["2023-04-30", 0], ["2023-05-01", 0], ["2023-05-02", 0], ["2023-05-03", 0], ["2023-05-04", 0], ["2023-05-05", 0], ["2023-05-06", 0], ["2023-05-07", 0], ["2023-05-08", 0], ["2023-05-09", 0], ["2023-05-10", 0], ["2023-05-11", 0], ["2023-05-12", 0], ["2023-05-13", 0], ["2023-05-14", 0], ["2023-05-15", 0], ["2023-05-16", 0], ["2023-05-17", 0], ["2023-05-18", 0], ["2023-05-19", 0], ["2023-05-20", 0], ["2023-05-21", 0], ["2023-05-22", 4], ["2023-05-23", 0], ["2023-05-24", 0], ["2023-05-25", 0], ["2023-05-26", 0], ["2023-05-27", 0], ["2023-05-28", 0], ["2023-05-29", 0], ["2023-05-30", 0], ["2023-05-31", 0], ["2023-06-01", 0], ["2023-06-02", 0], ["2023-06-03", 0], ["2023-06-04", 0], ["2023-06-05", 0], ["2023-06-06", 0], ["2023-06-07", 0], ["2023-06-08", 0], ["2023-06-09", 0], ["2023-06-10", 0], ["2023-06-11", 0], ["2023-06-12", 0], ["2023-06-13", 0], ["2023-06-14", 0], ["2023-06-15", 0], ["2023-06-16", 0], ["2023-06-17", 0], ["2023-06-18", 0], ["2023-06-19", 0], ["2023-06-20", 0], ["2023-06-21", 0], ["2023-06-22", 0], ["2023-06-23", 0], ["2023-06-24", 0], ["2023-06-25", 0], ["2023-06-26", 0], ["2023-06-27", 0], ["2023-06-28", 0], ["2023-06-29", 0], ["2023-06-30", 0], ["2023-07-01", 0], ["2023-07-02", 0], ["2023-07-03", 0], ["2023-07-04", 0], ["2023-07-05", 0], ["2023-07-06", 0], ["2023-07-07", 0], ["2023-07-08", 0], ["2023-07-09", 0], ["2023-07-10", 0], ["2023-07-11", 0], ["2023-07-12", 0], ["2023-07-13", 0], ["2023-07-14", 0], ["2023-07-15", 0], ["2023-07-16", 2], ["2023-07-17", 0], ["2023-07-18", 0], ["2023-07-19", 0], ["2023-07-20", 0]]
+        }]
 
+    };
 
+    myChart.setOption(option);
+</script>
 
-<main class="post-container content">
+    
 
-    <!--社交區塊按鈕-->
-<!-- <div id="social-block" style="z-index: 9999;">
-    <ul>
-        <li>
-            <a href="https://www.facebook.com/facebook/?brand_redir=123739327653840" class="tooltipped" target="_blank" data-tooltip="Facebook" data-position="top" data-delay="50">
-                <i id="social-block-share" class="black-text">分享</i>
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/Twitter" class="tooltipped" target="_blank" data-tooltip="Twitter" data-position="top" data-delay="50">
-                <i class="fab fa-twitter black-text"></i>
-            </a>
-        </li><li>
-            <a href="https://www.youtube.com/" class="tooltipped" target="_blank" data-tooltip="Youtube" data-position="top" data-delay="50">
-                <i class="fab fa-youtube black-text"></i>
-            </a>
-        </li><li>
-            <a href="https://www.apple.com/tw/apple-podcasts/" class="tooltipped" target="_blank" data-tooltip="podcast" data-position="top" data-delay="50">
-                <i class="fa-solid fa-podcast black-text"></i>
-            </a>
-        </li><li>
-            <a href="" class="tooltipped" target="_blank" data-tooltip="line" data-position="top" data-delay="50">
-                <i class="fab fa-line black-text"></i>
-            </a>
-        </li><li>
-            <a href="https://www.facebook.com/facebook/?brand_redir=123739327653840" class="tooltipped" target="_blank" data-tooltip="Facebook" data-position="top" data-delay="50">
-                <i class="fab fa-facebook-f black-text"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-<script>
-    const socialBlock=document.getElementById('social-block')
-    const screenWidth=document.body.clientWidth
+    
 
-    if(screenWidth<540){
-        socialBlock.style.display="none"
-    }
-
-    window.addEventListener('resize',()=>{
-        history.go(0)
-    })
-</script> -->
-
-<!-- 文章内容详情 -->
-<div id="artDetail">
-  <div class="container">
-    <!--現在位置-->
-
-    <div
-      class="post-title post-info-tags row"
-      style="margin-bottom: 5px; margin-top: 35px"
-    ></div>
-
-    <!-- 標題 -->
-
-    <div class="post-title" style="font-weight: bold">從 J 粒子到宇宙射線：丁肇中的實驗物理之旅</div>
-
-    <!-- 資訊 -->
-
-    <div class="post-info">
-      <!-- 作者 -->
-      <div
-        style="color: rgb(177, 177, 177); margin-top: 10px; margin-bottom: 10px"
-      >
-        by -
-        <a
-          class="point-color post-info-author"
-          href="/author/編輯室"
-          rel="external nofollow noreferrer"
-          ><span style="color: rgb(177, 177, 177); margin-right: 8px"
-            >編輯室</span
-          ></a
-        >
-        -
-        <!-- 日期 -->
+    <div id="cd-timeline" class="container">
         
-        <span style="margin-right: 8px"
-          >2023/05/22</span
-        >
-         
+        <div class="cd-timeline-block">
 
-        <!-- tag -->
-         
-        <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
-          <span class="tagCtrl point-color" style="color: rgb(177, 177, 177)"
-            >- #比特幣</span
-          >
-        </a>
-        
-        <a href="/tags/HODL/">
-          <span class="tagCtrl point-color" style="color: rgb(177, 177, 177)"
-            >- #HODL</span
-          >
-        </a>
-        
-        <a href="/tags/Meme/">
-          <span class="tagCtrl point-color" style="color: rgb(177, 177, 177)"
-            >- #Meme</span
-          >
-        </a>
-         
-      </div>
-    </div>
+            
+            
+            
+            <div class="cd-timeline-img year" data-aos="zoom-in-up">
+                <a href="/archives/2023">2023</a>
+            </div>
+            
 
-    <!-- 圖片 -->
+            
+            
+            
+            <div class="cd-timeline-img month" data-aos="zoom-in-up">
+                <a href="/archives/2023/07">07</a>
+            </div>
+            
 
-    <div class="row">
-      
-      <img src="https://img.natgeomedia.com/userfiles/sm/sm1920_images_A1/16332/2023060602726198.jpg" class="responsive-img" alt="" />
-      
-      <div class="img-bg"></div>
-      
-      <!-- 引言         -->
-      <div
-        class="post-info"
-        style="
-          border-left: 5px solid rgb(238, 238, 238);
-          margin-top: 20px;
-          margin-bottom: 35px;
-        "
-      >
-        <p
-          class="q-content"
-          style="
-            margin: 0px 10px;
-            color: #999999;
-            font-size: 16px;
-            line-height: 30px;
-          "
-        >
-          丁肇中是享譽全球的物理學家，他的研究為現代物理學奠定了基礎，也讓他獲得 1976 年的諾貝爾物理獎。丁肇中是中央研究院院士，也是現任麻省理工學院的物理學教授。歷經數十年實驗物理的研究之路，他用一次次的實驗結果打破原本的理論認知，為物理學開創了新的道路。丁肇中如何從 J 粒子的發現，走到最前沿研究宇宙射線，探索宇宙的起源與未知？中研院「研之有物」梳理記錄丁肇中 2022 年在院內物理研究所的演講內容，介紹他在物理學領域的傑出成就以及科學家的體悟。<br />
-        </p>
-      </div>
-      
-    </div>
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>16</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2023/07/16/post001/">
+                            <div class="card-image">
+                                
+                                <img src="https://i.imgur.com/EGulHmv.png" class="responsive-img" alt="專有名詞 - 時間鏈">
+                                
+                                <span class="card-title">專有名詞 - 時間鏈</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    時間鏈是中本聰最初對比特幣的稱呼，區塊鏈的原始名稱。
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2023/07/16
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-user fa-fw"></i>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
 
-     
-
-    <div class="card-content">
-      <div id="articleContent">
-        <h4 id="專家結論不一定是對的：證明電子沒有體積"><a href="#專家結論不一定是對的：證明電子沒有體積" class="headerlink" title="專家結論不一定是對的：證明電子沒有體積"></a>專家結論不一定是對的：證明電子沒有體積</h4><br>
-
-<blockquote>
-<p>1965 年丁肇中前往德國的大型粒子物理學研究機構「德國電子加速器」（DESY）進行第一個實驗工作，目的是證明「電子沒有體積」。為什麼要做這個實驗呢？因為當時科學家對電子有無體積的問題出現了爭議。<br><br></p>
-</blockquote>
-<p>當時正經歷了一次比特幣的大跌，發帖者正在喝酒的狀態而打錯了字，但依然撰寫了這篇很有情緒意義的文章．表示自己是一個非常糟糕的交易員，但是他會以繼續長期持有比特幣作為他的交易策略，對比特幣的未來保持樂觀．</p>
-<p>這個詞後來變得非常流行，並成為一種象徵性的口號，代表了在加密貨幣市場上堅持持有的心態。<br><br></p>
-<p>「實驗是自然科學的基礎，理論如果沒有實驗的證明，是沒有意義的。當實驗推翻了理論後，才可能創建新的理論；理論是不可能推翻實驗的。過去 400 年來，我們對物質基本結構的了解，大都來自於實驗物理。」中研院物理所於 2022 年 12 月 27 日舉辦了李水清講座，邀請到著名的實驗物理學家丁肇中，他以這段話做為整場講座的開端。</p>
-<p>從丁肇中踏上實驗物理之路開始，至今已有 60 多年，這一路走來，丁肇中累積了許多突破性的成果，這些經歷也讓他獲得了豐富的人生體會。在這場講座中，丁肇中以「我所經歷的現代物理和我的體會」為題，一一細數這些成果及體會，在言談中展露出他對物理的熱情、堅持，以及永不磨滅的興趣與好奇心。</p>
-<p><img src="https://img.natgeomedia.com/userfiles/sm/sm1920_images_A1/16332/2023060602655260.jpg"></p>
-<h4 id="專家結論不一定是對的：證明電子沒有體積-1"><a href="#專家結論不一定是對的：證明電子沒有體積-1" class="headerlink" title="專家結論不一定是對的：證明電子沒有體積"></a>專家結論不一定是對的：證明電子沒有體積</h4><p>1965 年丁肇中前往德國的大型粒子物理學研究機構「德國電子加速器」（DESY）進行第一個實驗工作，目的是證明「電子沒有體積」。為什麼要做這個實驗呢？因為當時科學家對電子有無體積的問題出現了爭議。</p>
-<p>ADads-parallax<br>根據理查·費曼（Richard Feynman） 、朱利安·施溫格（Julian Schwinger）和朝永振一郎在 1948 年提出的量子電動力學理論（Quantum Electrodynamics，簡稱 QED），電子是沒有體積的，當時所有的實驗都證明了 QED 理論的完備性，他們三人也因此獲得 1965 年的諾貝爾物理獎。</p>
-<p>可是在1964年時，哈佛大學和康乃爾大學的科學家和專家耗費多年心思，進行兩個不同的實驗，卻得出與 QED 相反的結論——量子電動力學是錯誤的，電子是有體積的，半徑是 10-13～10-14 公分。這個結論是兩個不同實驗團隊的成果，也因此受到物理界人士的認可和重視。</p>
-<p>當時剛獲得博士學位的丁肇中，決定用不同方法來測量電子半徑。丁肇中回憶：「那個時候沒有人相信我能做出這個實驗，更沒有人支援我。」所以在 1965 年，丁肇中決定離開美國，到德國新建的 DESY，利用這個周長 320 公尺的加速器，產生能量 75 億電子伏特的光，打到儀器上，以測量電子的半徑。</p>
-<p>在德國八個月後，丁肇中的實驗結果證明量子電動力學是正確的：電子真的沒有體積，它的半徑小於 10-14 公分。我們可以說：在當年實驗可及的範圍內，電子半徑為零（consistent with zero）。這推翻了當初康乃爾大學與哈佛大學備受重視的實驗結果。</p>
- 
-      </div>
-
-      <!--<div class="tag_share" style="display: block;">
-                <div class="post-meta__tag-list" style="display: inline-block;">
-                    
-                        <div class="article-tag">
+                        
+                        <div class="card-action article-tags">
                             
-                                <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
-                                    <span class="chip bg-color">比特幣</span>
-                                </a>
+                            <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/"><span class="chip bg-color">比特幣</span></a>
                             
-                                <a href="/tags/HODL/">
-                                    <span class="chip bg-color">HODL</span>
-                                </a>
+                            <a href="/tags/Bitcoin/"><span class="chip bg-color">Bitcoin</span></a>
                             
-                                <a href="/tags/Meme/">
-                                    <span class="chip bg-color">Meme</span>
-                                </a>
+                            <a href="/tags/%E6%99%82%E9%96%93%E9%8F%88/"><span class="chip bg-color">時間鏈</span></a>
                             
                         </div>
-                    
+                        
+                    </div>
                 </div>
+            </article>
+        </div>
+        
+        <div class="cd-timeline-block">
+
+            
+            
+
+            
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>16</span>
             </div>
-            -->
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2023/07/16/post002/">
+                            <div class="card-image">
+                                
+                                <img src="https://i.imgur.com/uudjUd1.png" class="responsive-img" alt="專有名詞 - BIP 比特幣改進建議">
+                                
+                                <span class="card-title">專有名詞 - BIP 比特幣改進建議</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    標準類 BIP（Standards Track BIP）：描述影響大多數或所有比特幣系統的任何修改，例如網路協議的修改
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2023/07/16
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-user fa-fw"></i>
+                                    
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                        <div class="card-action article-tags">
+                            
+                            <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/"><span class="chip bg-color">比特幣</span></a>
+                            
+                            <a href="/tags/Bitcoin/"><span class="chip bg-color">Bitcoin</span></a>
+                            
+                            <a href="/tags/BIP/"><span class="chip bg-color">BIP</span></a>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
     </div>
-
-           
-  </div>
-
-  
-
-<article id="prenext-posts" class="prev-next articles">
-  <div class="container">
-    <div class="bg-render"></div>
-    <div class="row up-row">
-      <div class="col s12">
-        <h3 class="related-posts">相關文章</h3>
-      </div>
-    </div>
-    <div class="row article-row">
-      
-      <div class="article col s12 m6 l6">
-        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E4%BA%94%E8%99%9F/">
-          <!-- 圖片 -->
-          <div class="card-image col s12 m5">
-            
-            <img
-              src="https://i.imgur.com/J0oK6nC.png"
-              class="responsive-img"
-              alt="什麼是 SHA256"
-            />
-            
-          </div>
-          <!-- 資料 -->
-          <div class="card-content article-content col s12 m7">
-            <div class="publish-info">
-              <!-- 標題 -->
-              <span class="card-title">什麼是 SHA256</span>
-              <br />
-              <!-- 作者 -->
-              <span class="publish-author">
-                 編輯室 
-              </span>
-              <br />
-              <!-- 日期 -->
-              <span class="publish-date">
-                2023/05/22
-              </span>
-              <!-- 摘要 -->
-              <div class="summary block-with-text">
-                
-                安全雜湊演算法（Secure Hash Algorithm, SHA）是密碼雜湊函數的家族，也是美國聯邦資訊處理標準（FIPS）認證的安全雜湊演算法 
-              </div>
-              <!-- 標籤 -->
-              
-              <div class="card-action article-tags">
-                
-                <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
-                  <span class="">#比特幣</span>
-                </a>
-                
-                <a href="/tags/SHA256/">
-                  <span class="">#SHA256</span>
-                </a>
-                
-                <a href="/tags/%E6%BC%94%E7%AE%97%E6%B3%95/">
-                  <span class="">#演算法</span>
-                </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-       
-      <div class="article col s12 m6 l6">
-        <!-- 圖片 -->
-        <a href="/2023/05/22/%E6%96%87%E7%AB%A0%E5%9B%9B%E8%99%9F/">
-          <div class="card-image col s12 m5">
-            
-            <img
-              src="https://i.imgur.com/h8T2PhV.png"
-              class="responsive-img"
-              alt="如何使用比特幣錢包"
-            />
-            
-          </div>
-          <!-- 資料 -->
-          <div class="card-content article-content col s12 m7">
-            <div class="publish-info">
-              <!-- 標題 -->
-              <span class="card-title">如何使用比特幣錢包</span>
-              <br />
-              <!-- 作者 -->
-              <span class="publish-author">
-                
-                <!-- <i class="fas fa-user fa-fw"></i> -->
-                編輯室 
-              </span>
-              <br />
-              <!-- 日期 -->
-              <span class="publish-date">
-                2023/05/22
-              </span>
-              <br />
-              <!-- 摘要 -->
-              <div class="summary block-with-text">
-                
-                要先知道擁有一個自己持有的錢包，才能夠真正的擁有比特幣． 
-              </div>
-              <!-- <br> -->
-              <!-- 標籤 -->
-              
-              <div class="card-action article-tags">
-                
-                <a href="/tags/%E6%AF%94%E7%89%B9%E5%B9%A3/">
-                  <span class="">#比特幣</span>
-                </a>
-                
-                <a href="/tags/%E9%8C%A2%E5%8C%85/">
-                  <span class="">#錢包</span>
-                </a>
-                
-                <a href="/tags/%E7%A7%81%E9%91%B0/">
-                  <span class="">#私鑰</span>
-                </a>
-                
-                <a href="/tags/%E5%8A%A9%E8%A8%98%E8%A9%9E/">
-                  <span class="">#助記詞</span>
-                </a>
-                
-              </div>
-              
-            </div>
-          </div>
-        </a>
-      </div>
-      
-    </div>
-  </div>
-</article>  <!-- 代码块功能依赖 -->
-<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
-
-
-
-<!-- 代码语言 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
-
-<!-- 代码块复制 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
-
-
-<!-- 代码块收缩 -->
-
-<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
-
-
-</div>
-
-<style>
-  @media (max-width: 420px) {
-    .tagCtrl {
-      display: none;
-    }
-  }
-</style>
-
 
 </main>
 
